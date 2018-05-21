@@ -1,0 +1,216 @@
+/*-----各界面-------*/
+.pages-content{
+    height: 605px;
+    margin: 0px auto;
+    width: 1400px;
+    border: 1px dashed #7ca7c9;
+}
+
+.title-heading{
+    text-align: center;
+    height:40px;color:#fff;
+    background: #000;
+    border:0px solid #fff;
+}
+.title-heading span{
+    font-size:16px;
+    position:relative;  
+    top:10px;
+    left:0%;
+    background: #000;
+}
+
+/*--------end-------*/
+
+/*------首页地图界面------*/
+.real-time-map{
+    height: 605px;
+    /* margin-top: 5px;  */
+}
+.map-info-panel{
+    height: 605px;
+    /* margin-top: 5px; */
+}
+.map-control-panel{
+    height: 605px;
+    /* margin-top: 5px; */   
+}
+
+.map-weather-info{
+    height: 230px;
+    border: 1px solid #000;
+}
+
+.map-target-info{
+    height: 285px;
+    border: 1px solid #000;
+
+   
+}
+
+
+
+
+.map-control-panel-row{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.map-control-panel-title{
+    font-size:16px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+
+/* .BMap_cpyCtrl{  
+    display: none;  
+}  */ 
+  
+.anchorBL{  
+    display: none;  
+} 
+
+/*--------end-------*/
+
+
+
+/*--------end-------*/
+
+/*----实时侦测页面------*/
+#radar-canv{
+    position: relative;
+    top:30px;
+    width: 520px;
+    height: 520px;
+    margin: 0 auto;
+    
+}
+#scanThread{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:10px auto;
+    background: rgba(0,0,0,0);
+    
+}
+
+
+
+.detect-panel{
+    height: 605px;
+    box-sizing: border-box;
+    padding: 30px 0px;
+}
+
+.suminfo-panel{
+    height: 605px;
+    box-sizing: border-box;
+    padding: 30px 5px;
+}
+
+.suminfo-card{
+    border: 3px double #a09d9d;
+    border-left: none;
+    height: 130px;
+    width: 170px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.suminfo-card:hover{
+    transform:translate(0,2px);
+    border: 2px double #89c2f1;
+    border-left: none;
+}
+
+
+
+.suminfo-card-title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F6CECE;
+    /* letter-spacing: 1px; */
+    margin-bottom: 5px;
+}
+
+.suminfo-card-title-line{
+    width: 80%;
+    height: 0px;
+    border: 1px solid #e9e6e6;
+    margin: 0px auto;
+
+}
+
+.suminfo-card-text{
+    margin-top:25px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-safe{
+    color: #52ee93;
+}
+
+.text-danger{
+    color:#ee5252;
+}
+
+
+
+/*-----目标信息----*/
+
+.target-table-area{
+    border: 2px solid #a09d9d; 
+}
+
+/*----战场环境信息----*/
+.enviro-table-area{
+    border: 2px solid #a09d9d;
+    height: 520px;
+}
+
+
+
+/*----航保信息----*/
+
+.airpro-table-area{
+    border: 2px solid #a09d9d;
+    height: 520px;
+}
+
+/*------------信息融合模块-------------*/
+
+/*----态势判断----*/
+
+.situation-area{
+    height: 520px;
+    border: 2px solid #a09d9d;
+}
+
+.threat-area{
+    height: 520px;
+    border: 2px solid #a09d9d;
+}
+
+/*------------辅助决策、攻击模块-------------*/
+
+.map-area{
+    margin-top:30px;
+    height: 545px;
+    margin-left: 30px;
+}
+.decision-panel{
+    margin-top:30px;
+    height: 541px;
+    border: 2px solid #a09d9d; 
+}

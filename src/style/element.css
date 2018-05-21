@@ -1,0 +1,37 @@
+.el-table th{
+    background-color: black;
+}
+
+.el-table{
+    color: #ffffff;
+}
+
+.el-table thead{
+    color: aliceblue;
+}
+
+
+
+.el-table th>.cell {
+    position: relative;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+    background: #424f63;
+    color:#eef79f;
+}
+
+
+/*---- 加载 -----*/
+.el-loading-spinner{
+    background-color:rgba(0, 0, 0, 0);
+}
+.el-loading-spinner .circular{
+    background-color:rgba(0, 0, 0, 0);
+}
