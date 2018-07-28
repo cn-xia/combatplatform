@@ -14,6 +14,7 @@ import AirproInfo from '@/pages/detect/AirproInfo'
 import Situation from '@/pages/infofusion/Situation'
 import Threat from '@/pages/infofusion/Threat'
 
+
 Vue.use(Router)
 
 export default new Router({

@@ -16,7 +16,9 @@
 /*****公共样式*********/
 *{
 	margin: 0px;
-    padding: 0px;
+    padding: 0px; 
+}
+html {
     background: #424f63;
 }
 /******end******/
