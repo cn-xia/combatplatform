@@ -58,20 +58,7 @@ import {RadarMap,UpdateMap} from '../assets/js/radar.js'
 var radarMap;
 
 
-var remainTime = function(millisecond){
-  var timeInfo = {};
-  timeInfo.day = Math.floor((millisecond /1000/ 3600) / 24);
-  timeInfo.hour = Math.floor((millisecond /1000/ 3600) % 24); 
-  timeInfo.minute = Math.floor((millisecond /1000/ 60) % 60);
-  timeInfo.second = Math.floor(millisecond/1000 % 60);  
-  timeInfo.haomiao = Math.floor(millisecond%1000); 
-  return timeInfo;
-}
 
-var counter = function(millisecond,callbackFunction){
-  var endTime = new Date().getTime()+millisecond
-  var sysSecond = endTime - new Date().getTime();
-}
 
 
 export default {
@@ -85,13 +72,12 @@ export default {
   },
   methods:{
     initRadar(){
+      //生成雷达图
       var canvas = document.querySelector("#scanThread")
       var ctx = canvas.getContext("2d");
       radarMap  = new RadarMap(ctx);
-      //console.log(ctx);
-     // UpdateMap(radarMap);
-      UpdateMap(radarMap);
-      //window.setInterval(UpdateMap,1000/35,radarMap); //35帧
+      UpdateMap(radarMap);  //非扫描
+      //window.setInterval(UpdateMap,1000/35,radarMap); //雷达图扫描效果
       
     },
     routerPages(val){

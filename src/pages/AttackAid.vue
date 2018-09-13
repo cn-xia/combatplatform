@@ -149,7 +149,7 @@ export default {
       this.form.armsList = row.armsList;
 
       //设置地图移动曲线
-      map.clearOverlays();
+      /* map.clearOverlays();
       var formerPoint = new BMap.Point(row.formerLong,row.formerLat);
       var afterPoint = new BMap.Point(row.afterLong,row.afterLat);
       var points = [formerPoint,afterPoint]
@@ -157,7 +157,7 @@ export default {
 
 
       var curve = new BMapLib.CurveLine(points, {strokeColor:"yellow", strokeWeight:3,strokeOpacity:0.5}); //创建弧线对象
-      map.addOverlay(curve); //添加到地图中
+      map.addOverlay(curve); */ //添加到地图中
     },
     addArms(){
       this.armsDialogTitle = "新增武器";
