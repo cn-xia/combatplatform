@@ -56,6 +56,24 @@
 import {RadarMap,UpdateMap} from '../assets/js/radar.js'
 
 var radarMap;
+
+
+var remainTime = function(millisecond){
+  var timeInfo = {};
+  timeInfo.day = Math.floor((millisecond /1000/ 3600) / 24);
+  timeInfo.hour = Math.floor((millisecond /1000/ 3600) % 24); 
+  timeInfo.minute = Math.floor((millisecond /1000/ 60) % 60);
+  timeInfo.second = Math.floor(millisecond/1000 % 60);  
+  timeInfo.haomiao = Math.floor(millisecond%1000); 
+  return timeInfo;
+}
+
+var counter = function(millisecond,callbackFunction){
+  var endTime = new Date().getTime()+millisecond
+  var sysSecond = endTime - new Date().getTime();
+}
+
+
 export default {
   data(){
     return{
@@ -88,11 +106,15 @@ export default {
       }
 
     }
+    
+    
+
+
+
   },
   mounted(){
     radarMap = null;
     this.initRadar();
-    
   }
 }
 </script>

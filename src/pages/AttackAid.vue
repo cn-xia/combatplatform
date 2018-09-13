@@ -141,6 +141,9 @@ export default {
       this.form.time = row.time;
       this.form.formerLong = row.formerLong;
       this.form.formerLat = row.formerLat;
+
+
+      
       this.form.afterLong = row.afterLong;
       this.form.afterLat = row.afterLat;
       this.form.armsList = row.armsList;
@@ -151,7 +154,7 @@ export default {
       var afterPoint = new BMap.Point(row.afterLong,row.afterLat);
       var points = [formerPoint,afterPoint]
 
-      
+
 
       var curve = new BMapLib.CurveLine(points, {strokeColor:"yellow", strokeWeight:3,strokeOpacity:0.5}); //创建弧线对象
       map.addOverlay(curve); //添加到地图中
