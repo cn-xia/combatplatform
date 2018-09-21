@@ -81,13 +81,13 @@ RadarMap.prototype = {
       t = me.options.t,
       radius = me.options.radius;
     var ctx = me.options.ctx;
-    if (t > 120)
+    if (t > 160)
       t = 0;
     //扫描动画
 
     ctx.save();
     ctx.translate(x, y);
-    ctx.rotate(t++ * (Math.PI / 60));
+    ctx.rotate(t++ * (Math.PI / 80));
     ctx.beginPath();
 
     var grd = ctx.createRadialGradient(0, 0, 0, 0, 0, 250);
@@ -96,7 +96,7 @@ RadarMap.prototype = {
     ctx.fillStyle = grd; //'rgba(0,200,200,0.3)';
 
     //这里巨坑呀，由于translate移动了中心点,so坐标应按移动后的计算
-    ctx.arc(0, 0, radius, 1.8 * Math.PI, 0, false);
+    ctx.arc(0, 0, radius, 1.96 * Math.PI, 0, false);
     //没有这句只是个弧形，连接原点成为扇形
     ctx.lineTo(0, 0);
     ctx.fill();
@@ -157,11 +157,10 @@ RadarMap.prototype.UpdatePoints = function (data) {
 
 }
 
-/* function UpdateScan(radarMap) {
-  radarMap.initMap();
+function UpdateScan(radarMap) {
   radarMap.scanThread();
 
-} */
+}
 
 function UpdateMap(radarMap) {
 
@@ -169,7 +168,6 @@ function UpdateMap(radarMap) {
   getTargetData().then(data => {
     radarMap.UpdatePoints(data);
     radarMap.initMap();
-    radarMap.scanThread();
     radarMap.drawPoint();
 
   });

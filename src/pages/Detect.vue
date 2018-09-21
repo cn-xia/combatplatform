@@ -74,8 +74,8 @@ export default {
       var ctx = canvas.getContext("2d");
       radarMap  = new RadarMap(ctx);
       UpdateMap(radarMap);  //非扫描
-      //window.setInterval(UpdateScan,1000/8,radarMap);
-      //window.setInterval(UpdateMap,1000/10,radarMap); //雷达图扫描效果
+      /* window.setInterval(UpdateScan,1000/35,radarMap);
+      window.setInterval(UpdateMap,1000/2,radarMap); //雷达图扫描效果 */
       
       
     },
