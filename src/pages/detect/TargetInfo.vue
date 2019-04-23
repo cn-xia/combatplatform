@@ -43,7 +43,7 @@ export default {
                     let position = element.position.split(" ");
                     obj.longitude = position[0];
                     obj.latitude = position[1];
-                    //obj.point = element.point;
+                    obj.point = element.point;
                     this.targetList.push(obj);
             
                    // console.log(obj);

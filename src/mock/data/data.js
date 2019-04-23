@@ -13,12 +13,12 @@ const targetData = function () {
       name: name[i % 3],
       type: type[i % 3],
       //update
-      point: {
+      /* point: {
         x: Random.integer(110, 180),
         y: Random.integer(130, 200),
         rank: Random.integer(1, 4)
-      },
-      //point:{x:110,y:120,rank:4},
+      }, */
+      point:{x:110,y:120,rank:4},
       speed: Random.integer(40, 50),
       distance: Random.float(180, 200, 2, 2),
       direction: Random.float(100, 200, 1, 1),

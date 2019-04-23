@@ -96,7 +96,7 @@ RadarMap.prototype = {
     ctx.fillStyle = grd; //'rgba(0,200,200,0.3)';
 
     //这里巨坑呀，由于translate移动了中心点,so坐标应按移动后的计算
-    ctx.arc(0, 0, radius, 1.96 * Math.PI, 0, false);
+    ctx.arc(0, 0, radius, 1.8 * Math.PI, 0, false);
     //没有这句只是个弧形，连接原点成为扇形
     ctx.lineTo(0, 0);
     ctx.fill();
@@ -158,7 +158,9 @@ RadarMap.prototype.UpdatePoints = function (data) {
 }
 
 function UpdateScan(radarMap) {
-  radarMap.scanThread();
+  //radarMap.scanThread();
+  //radarMap.initMap();
+ /*   */
 
 }
 
@@ -168,8 +170,9 @@ function UpdateMap(radarMap) {
   getTargetData().then(data => {
     radarMap.UpdatePoints(data);
     radarMap.initMap();
+    radarMap.scanThread();
     radarMap.drawPoint();
-
+ 
   });
 
 

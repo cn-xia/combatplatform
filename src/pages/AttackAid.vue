@@ -141,9 +141,6 @@ export default {
       this.form.time = row.time;
       this.form.formerLong = row.formerLong;
       this.form.formerLat = row.formerLat;
-
-
-      
       this.form.afterLong = row.afterLong;
       this.form.afterLat = row.afterLat;
       this.form.armsList = row.armsList;
